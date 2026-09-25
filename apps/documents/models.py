@@ -6,7 +6,7 @@ def document_file_path(instance,filename):
     return f"documents/user_{instance.user.id}/{filename}"
 
 class Document(models.Model):
-    class Status(models.TextChoices);
+    class Status(models.TextChoices):
         PENDING = 'PENDING' , 'Pending'
         PROCESSING = 'PROCESSING', 'Processing'
         COMPLETED = 'COMPLETED', 'Completed'
@@ -36,6 +36,3 @@ class DocumentInsight(models.Model):
 
     def __str__(self):
         return f"Insight for {self.document.title}"
-
-
-
