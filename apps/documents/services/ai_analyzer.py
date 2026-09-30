@@ -2,6 +2,7 @@ import json
 import os
 import google.generativeai as genai
 
+
 class AIService:
     def __init__(self):
         api_key = os.getenv("GEMINI_API_KEY")

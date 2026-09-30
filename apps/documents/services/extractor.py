@@ -16,12 +16,12 @@ class DocumentExtractor:
         elif ext == '.pdf':
             reader =PdfReader(file_path)
             total_pages = len(reader.pages)
-            pages_to_read = min(total_pages, map_pages)
+            pages_to_read = min(total_pages, max_pages)
 
             text_parts = []
             for i in range(pages_to_read):
                 page_text = reader.pages[i].extract_text()
-                if page_text;
+                if page_text:
                     text_parts.append(page_text.strip())
 
             return "\n\n".join(text_parts),total_pages

@@ -1,0 +1,11 @@
+INVOICE #INV-2026-001
+Date: March 15, 2026
+Billed To: TechCorp Solutions Inc.
+Services Rendered:
+
+
+- Cloud Infrastructure Migration (PostgreSQL, Gunicorn): $2,500
+- REST API Development (Django REST Framework, SimpleJWT): $3,500
+- AI Summarization Service Integration: $1,200
+Total Balance Due: $7,200
+Payment Terms: Net 30 days. Contact billing@dev.io for inquiries.

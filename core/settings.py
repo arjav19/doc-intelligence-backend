@@ -64,3 +64,25 @@ REST_FRAMEWORK = {
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',  # Must be at the very top
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',  # Directly after SecurityMiddleware
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.middleware.common.CommonMiddleware',
+    # ... remaining middleware ...
+]
+
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+import dj_database_url
+
+
+DATABASE_URL = os.getenv('DATABASE_URL')
+if DATABASE_URL:
+    DATABASES['default'] = dj_database_url.config(
+        default=DATABASE_URL,
+        conn_max_age=600,
+        ssl_require=True
+    )
