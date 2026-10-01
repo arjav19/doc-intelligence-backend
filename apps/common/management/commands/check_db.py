@@ -1,3 +1,10 @@
+"""Management command to test and verify database connectivity.
+
+
+Usage:
+    python manage.py check_db
+"""
+
 from django.core.management.base import BaseCommand
 from django.db import connection
 

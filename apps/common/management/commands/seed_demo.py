@@ -1,3 +1,10 @@
+"""Management command to quickly seed a demo user for testing and evaluation.
+
+
+Usage:
+    python manage.py seed_demo
+"""
+
 from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
 

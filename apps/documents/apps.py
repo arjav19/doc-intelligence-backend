@@ -1,7 +1,7 @@
 from django.apps import AppConfig
 
 class DocumentsConfig(AppConfig):
-    default_auto_field = django.db.models.BigAutoField'
+    default_auto_field = 'django.db.models.BigAutoField'
     name = 'apps.dicuments'
     verbose_name = 'Document Management & Intelligence'
 
