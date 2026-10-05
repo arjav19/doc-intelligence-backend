@@ -1,4 +1,4 @@
-"""WSGI config for doc-intelligence-backend project.
+﻿"""WSGI config for doc-intelligence-backend project.
 
 
 It exposes the WSGI callable as a module-level variable named ``application``.

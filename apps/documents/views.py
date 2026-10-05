@@ -1,4 +1,4 @@
-from rest_framework import viewsets, parsers
+﻿from rest_framework import viewsets, parsers
 from apps.documents.models import Document, DocumentInsight
 from apps.documents.serializers import DocumentSerializer, DocumentUploadSerializer
 from apps.documents.permissions import IsDocumentOwner

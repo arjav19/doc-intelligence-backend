@@ -1,4 +1,4 @@
-"""Document processing and AI services package.
+﻿"""Document processing and AI services package.
 
 
 Exposes decoupled extractors and LLM integration clients.

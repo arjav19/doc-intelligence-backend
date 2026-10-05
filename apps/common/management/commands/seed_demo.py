@@ -1,4 +1,4 @@
-"""Management command to quickly seed a demo user for testing and evaluation.
+﻿"""Management command to quickly seed a demo user for testing and evaluation.
 
 
 Usage:

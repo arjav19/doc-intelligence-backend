@@ -1,4 +1,4 @@
-"""Management command to test and verify database connectivity.
+﻿"""Management command to test and verify database connectivity.
 
 
 Usage:

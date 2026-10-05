@@ -1,4 +1,4 @@
-"""Tests for user registration, authentication, and JWT token issuance."""
+﻿"""Tests for user registration, authentication, and JWT token issuance."""
 
 
 import pytest

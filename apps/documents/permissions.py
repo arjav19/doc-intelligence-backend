@@ -1,4 +1,4 @@
-from rest_framework import permissions
+﻿from rest_framework import permissions
 
 class IsDocumentOwner(permissions.BasePermission):
     """Custom permission to only allow owners of a document to view, edit, or delete it.

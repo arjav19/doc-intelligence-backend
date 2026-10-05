@@ -1,4 +1,4 @@
-import os 
+﻿import os 
 from pypdf import PdfReader
 
 class DocumentExtractor:

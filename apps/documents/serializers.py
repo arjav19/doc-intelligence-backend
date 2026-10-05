@@ -1,4 +1,4 @@
-import os
+﻿import os
 from rest_framework import serializers
 from apps.documents.models import Document, DocumentInsight
 

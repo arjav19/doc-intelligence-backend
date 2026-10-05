@@ -1,4 +1,4 @@
-"""Shared pytest fixtures across the test suite.
+﻿"""Shared pytest fixtures across the test suite.
 
 
 Provides pre-configured API clients, authenticated users, and hermetic AI mocks.

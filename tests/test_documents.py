@@ -1,4 +1,4 @@
-import pytest
+﻿import pytest
 from unittest.mock import patch
 from django.contrib.auth.models import User
 from django.core.files.uploadedfile import SimpleUploadedFile
