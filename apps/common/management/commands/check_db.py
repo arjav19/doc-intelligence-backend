@@ -15,7 +15,7 @@ class Command(BaseCommand):
         try:
             with connection.cursor() as cursor:
                 cursor.execute("SELECT version();")
-                version  = cursor.fetchnote()
+                version  = cursor.fetchone()
                 self.stdout.write(self.style.SUCCESS(f"Connected to PostgreSQL: {version[0]}"))
 
         except Exception as e:

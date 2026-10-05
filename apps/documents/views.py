@@ -8,7 +8,7 @@ from apps.documents.services.ai_analyzer import AIService
 
 class DocumentViewSet(viewsets.ModelViewSet):
     parser_classes = (parsers.MultiPartParser, parsers.FormParser, parsers.JSONParser)
-    permission_classes = (IsDocumentOwner,)
+    permission_classes = [IsDocumentOwner]
 
 
     def get_serializer_class(self):
